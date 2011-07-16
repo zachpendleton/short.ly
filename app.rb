@@ -1,7 +1,7 @@
 class App < Sinatra::Base
   get "/" do
     @version     = RUBY_VERSION
-    @environment = RACK_ENV
+    @environment = ENV['RACK_ENV']
 
     erb :welcome
   end
