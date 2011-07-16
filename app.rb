@@ -1,5 +1,8 @@
 class App < Sinatra::Base
   get "/" do
-    erb "<h1>It works!</h1>"
+    @version     = RUBY_VERSION
+    @environment = RACK_ENV
+
+    erb :welcome
   end
 end
