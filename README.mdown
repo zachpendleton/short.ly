@@ -1,3 +1,5 @@
 # Sinatra Template
 
+Author: Zach Pendleton, 2011.
+
 A starting template for Sinatra projects.
