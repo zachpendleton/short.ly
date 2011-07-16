@@ -15,10 +15,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <script src="/js/lib/modernizr-2.0.6.js"></script>
+  <link rel="stylesheet" href="/css/main.css" />
 </head>
 <body>
   <div class="wrapper">
-    <%= yield %>
+    <header class="branding">
+      <h1>My Application</h1>
+    </header>
+
+    <div class="main">
+      <%= yield %>
+    </div>
+
+    <footer class="branding">
+      <small>&copy; <%= Time.now.year %>, Zach Pendleton.</small>
+    </footer>
   </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
