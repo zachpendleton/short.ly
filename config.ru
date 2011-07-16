@@ -5,7 +5,10 @@ require "bundler"
 Bundler.require
 
 # Local config
-require "config/initializers/database"
+require "find"
+%w{config/initializers lib}.each do |load_path|
+  Find.find(load_path) { |f| require f unless File.directory?(f) }
+end
 RACK_ENV ||= "development"
 
 # Load app
