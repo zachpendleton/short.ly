@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-#gem "active_record", :require => "activerecord"
+gem "activerecord", :require => "active_record"
 #gem "mongo_mapper"
 gem "foreman"
 gem "sinatra"
