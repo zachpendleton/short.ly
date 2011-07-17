@@ -1,4 +1,4 @@
-# ActiveRecord Configuration
+# Sequel Configuration
 settings = YAML::load_file("config/database.yml")
 DB = Sequel.connect(settings[ENV['RACK_ENV']])
 

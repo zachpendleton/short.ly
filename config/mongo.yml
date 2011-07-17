@@ -1,17 +1,13 @@
 # MongoMapper Configuration
 
-defaults: &defaults
-  host: localhost
-
 development:
   name: app_development
-  <<: &defaults
+  host: localhost
 
 test:
   name: app_test
-  <<: &defaults
+  host: localhost
 
 production:
   name: app_production
-  <<: &defaults
-
+  host: localhost
