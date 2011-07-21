@@ -1,6 +1,6 @@
 # Sequel Configuration
-settings = YAML::load_file("config/database.yml")
-DB = Sequel.connect(settings[ENV['RACK_ENV']])
+settings = YAML::load_file("config/db.yml")
+DB = Sequel.connect(ENV['DATABASE_URL'] || settings[ENV['RACK_ENV']])
 
 # MongoMapper Configuration
 # settings = YAML::load_file("config/mongo.yml")
