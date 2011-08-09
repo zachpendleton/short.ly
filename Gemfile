@@ -9,8 +9,11 @@ gem "unicorn"
 # Database Stack (Sequel)
 gem "redis"
 gem "sequel"
-gem "sqlite3"
 
-# Database Stack (Mongo)
-# gem "bson_ext"
-# gem "mongo_mapper"
+group :development do
+  gem "sqlite3"
+end
+
+group :production do
+  gem "pg"
+end

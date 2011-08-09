@@ -13,6 +13,7 @@ GEM
     launchy (2.0.5)
       addressable (~> 2.2.6)
     mime-types (1.16)
+    pg (0.11.0)
     rack (1.3.2)
     raindrops (0.7.0)
     redis (2.2.2)
@@ -37,6 +38,7 @@ PLATFORMS
 DEPENDENCIES
   foreman
   heroku
+  pg
   redis
   sequel
   sinatra
