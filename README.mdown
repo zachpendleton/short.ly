@@ -1,5 +1,11 @@
-# Sinatra Template
+# Short.ly
 
-Author: Zach Pendleton, 2011.
+A(nother) URL shortener running on Sinatra. Why? Because I could.
 
-A starting template for Sinatra projects.
+## Stack info
+Short.ly can be run anywhere, but supports Heroku out of the box. It
+uses PostgreSQL for a persistent data store and Redis for caching. Could
+I have used Redis for the whole thing? Yes. Should I have used Redis for
+the whole thing? Probably. Why didn't I? Because in addition to showing
+some of my coding prowess, this app displays beautifully my ability to
+overcomplicate even the simplest app.
