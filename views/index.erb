@@ -1,0 +1,23 @@
+<div class="content">
+  <% if @url %>
+    <p>Your new URL is <%= url_link(@url) %></p>
+  <% end %>
+
+  <form action="/" method="post">
+    <fieldset>
+      <ol>
+        <li>http:// <input type="text" name="url" id="url" placeholder="Your URL" /></li>
+        <li><button type="submit">Shorten</button></li>
+      </ol>
+    </fieldset>
+  </form>
+</div>
+
+<div class="sidebar">
+  <h2>Recent URLs</h2>
+  <ul>
+    <% recent_urls.each do |url| %>
+      <li><%= url %></li>
+    <% end %>
+  </ul>
+</div>
