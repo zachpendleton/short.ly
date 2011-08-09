@@ -8,7 +8,7 @@ namespace :db do
   task :connect => :environment do
     settings    = YAML::load_file("config/database.yml")
     environment = ENV['RACK_ENV'] || "development"
-    DB          = Sequel.connect(settings[environment])
+    DB          = Sequel.connect(ENV['DATABASE_URL'] || settings[environment])
   end
 end
 
